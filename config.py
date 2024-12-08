@@ -20,9 +20,9 @@ BOT_TOKEN = environ.get("BOT_TOKEN", "")
 AUTH_CHANNEL = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('AUTH_CHANNEL', '-1001510710358').split()]
 
 PICS = (environ.get('PICS', 'https://freeimage.host/i/d10VHep')).split() # Bot Start Picture
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1029462448 5796857876').split()]
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1029462448').split()]
 BOT_USERNAME = environ.get("BOT_USERNAME", "Anime_Files_Store_DBot") # without @
-PORT = environ.get("PORT", "80")
+PORT = environ.get("PORT", "8080")
 
 # Clone Info :-
 CLONE_MODE = bool(environ.get('CLONE_MODE', False)) # Set True or False
@@ -76,6 +76,6 @@ if 'DYNO' in environ:
     ON_HEROKU = True
 else:
     ON_HEROKU = False
-URL = environ.get("URL", "")
+URL = environ.get("URL", "https://web-69eq1ry7j5yt.up-de-fra1-k8s-1.apps.run-on-seenode.com/")
 
     
