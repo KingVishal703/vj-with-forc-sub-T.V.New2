@@ -19,7 +19,7 @@ BOT_TOKEN = environ.get("BOT_TOKEN", "")
 
 AUTH_CHANNEL = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('AUTH_CHANNEL', '-1001510710358').split()]
 
-PICS = (environ.get('PICS', 'https://freeimage.host/i/d10VHep')).split() # Bot Start Picture
+PICS = (environ.get('PICS', 'https://telegra.ph/file/f198e9233986d61549659.jpg')).split() # Bot Start Picture
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1029462448').split()]
 BOT_USERNAME = environ.get("BOT_USERNAME", "Anime_Files_Store_DBot") # without @
 PORT = environ.get("PORT", "8080")
@@ -42,7 +42,7 @@ AUTO_DELETE = int(environ.get("AUTO_DELETE", "30")) # Time in Minutes
 AUTO_DELETE_TIME = int(environ.get("AUTO_DELETE_TIME", "1800")) # Time in Seconds
 
 # Channel Information
-LOG_CHANNEL = int(environ.get("LOG_CHANNEL", "-1002243581329"))
+LOG_CHANNEL = int(environ.get("LOG_CHANNEL", "-1001860196646 -1002304788278"))
 
 # File Caption Information
 CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", f"{script.CAPTION}")
